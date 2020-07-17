@@ -7,12 +7,33 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var numberOneTextField: UITextField!
+    
+    
+    @IBOutlet weak var numberTwoTextField: UITextField!
+    
+  
+    @IBAction func calculateBtn(_ sender: Any) {
+    
+    
+    let numberOne = Int(numberOneTextField.text!)
+    
+    let numberTwo = Int(numberTwoTextField.text!)
+    
+        let greaterThan = (numberOne ?? <#default value#> > numberTwo!)
+    
+        let lessThan = (numberOne ?? <#default value#> < numberTwo!)
+    
+        let greaterThanorEqualto = (numberOne ?? <#default value#> >= numberTwo!)
+    
+        let lessThanorEqualto = (numberOne ?? <#default value#> <= numberTwo!)
+    
+        
+        func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        }
     }
 
 
